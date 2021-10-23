@@ -115,3 +115,8 @@ build/
 
 # Common working directory
 run/
+
+# Project specific
+server/*
+!/server/paper.jar
+!/server/eula.txt
