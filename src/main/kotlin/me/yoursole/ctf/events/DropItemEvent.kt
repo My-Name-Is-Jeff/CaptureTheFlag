@@ -11,7 +11,7 @@ class DropItemEvent : Listener {
     fun onItemDrop(e: PlayerDropItemEvent) {
         if (e.itemDrop.itemStack.isSimilar(Flag.flag)) {
             e.isCancelled = true
-            e.player.sendMessage(ChatColor.RED.toString() + "You can not get rid of this")
+            e.player.sendMessage("${ChatColor.RED}You can not get rid of this")
         }
     }
 }

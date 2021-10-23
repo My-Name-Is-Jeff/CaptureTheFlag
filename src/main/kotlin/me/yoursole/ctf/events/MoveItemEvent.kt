@@ -16,7 +16,7 @@ class MoveItemEvent : Listener {
                 .isSimilar(Flag.flag)
         ) {
             e.isCancelled = true
-            e.whoClicked.sendMessage(ChatColor.RED.toString() + "You can not get rid of this")
+            e.whoClicked.sendMessage("${ChatColor.RED}You can not get rid of this")
         }
     }
 

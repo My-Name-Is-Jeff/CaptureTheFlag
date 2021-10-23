@@ -17,7 +17,7 @@ class GetCompass : Listener {
         if (GameData.it != null) {
             if (e.currentItem!!.type == Material.COMPASS) {
                 (e.whoClicked as Player).compassTarget = GameData.it!!.location
-                e.whoClicked.sendMessage(ChatColor.GREEN.toString() + "Your compass is now pointing to the player who has the flag!")
+                e.whoClicked.sendMessage("${ChatColor.GREEN}Your compass is now pointing to the player who has the flag!")
             }
         }
     }
@@ -27,13 +27,13 @@ class GetCompass : Listener {
         if (GameData.it != null) {
             if (e.item.itemStack.type == Material.COMPASS) {
                 e.player.compassTarget = GameData.it!!.location
-                e.player.sendMessage(ChatColor.GREEN.toString() + "Your compass is now pointing to the player who has the flag!")
+                e.player.sendMessage("${ChatColor.GREEN}Your compass is now pointing to the player who has the flag!")
             }
         }
     }
 
     @EventHandler
-    fun onPlayerMove(e: PlayerMoveEvent?) {
+    fun onPlayerMove(e: PlayerMoveEvent) {
         if (GameData.it != null) {
             for (player in Bukkit.getOnlinePlayers()) {
                 player.compassTarget = GameData.it!!.location

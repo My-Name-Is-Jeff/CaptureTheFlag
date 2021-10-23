@@ -12,7 +12,7 @@ class PlaceFlagEvent : Listener {
     fun onPlaceFlag(e: BlockPlaceEvent) {
         if (GameData.it != null && e.blockPlaced.type == Material.BLUE_BANNER || e.blockPlaced.type == Material.BLUE_WALL_BANNER) {
             e.isCancelled = true
-            e.player.sendMessage(ChatColor.RED.toString() + "You can not place this item")
+            e.player.sendMessage("${ChatColor.RED}You can not place this item")
         }
     }
 }
