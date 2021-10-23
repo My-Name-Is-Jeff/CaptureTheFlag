@@ -1,8 +1,8 @@
 package me.yoursole.ctf;
 
-import me.yoursole.ctf.Commands.Start;
-import me.yoursole.ctf.Commands.Stop;
-import me.yoursole.ctf.Events.*;
+import me.yoursole.ctf.commands.Start;
+import me.yoursole.ctf.commands.Stop;
+import me.yoursole.ctf.events.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;

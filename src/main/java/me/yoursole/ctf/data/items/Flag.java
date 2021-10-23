@@ -1,4 +1,4 @@
-package me.yoursole.ctf.DataFiles.Items;
+package me.yoursole.ctf.data.items;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -12,14 +12,14 @@ import java.util.List;
 public class Flag {
     public static ItemStack flag = setupFlag();
 
-    public static ItemStack setupFlag(){
+    public static ItemStack setupFlag() {
         ItemStack flag = new ItemStack(Material.BLUE_BANNER);
         ItemMeta meta = flag.getItemMeta();
 
         List<String> lore = new ArrayList<>();
-        meta.setDisplayName(ChatColor.BLUE+"The Flag");
-        lore.add(ChatColor.GOLD+"Keep me safe");
-        lore.add(ChatColor.GOLD+"When I am in your inventory you get points");
+        meta.setDisplayName(ChatColor.BLUE + "The Flag");
+        lore.add(ChatColor.GOLD + "Keep me safe");
+        lore.add(ChatColor.GOLD + "When I am in your inventory you get points");
         meta.setLore(lore);
         meta.setUnbreakable(true);
         meta.setCustomModelData(1);

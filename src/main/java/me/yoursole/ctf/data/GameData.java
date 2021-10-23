@@ -1,4 +1,4 @@
-package me.yoursole.ctf.DataFiles;
+package me.yoursole.ctf.data;
 
 import org.bukkit.entity.Player;
 
