@@ -42,7 +42,7 @@ tasks {
         }
     }
 
-    withType<Jar> {
+    named<Jar>("jar") {
         enabled = false
         dependsOn(shadowJar)
     }
